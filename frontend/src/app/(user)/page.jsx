@@ -7,7 +7,7 @@ import { toPersianNumbersWithComma } from "@/utils/toPersianNumbers";
 import Link from "next/link";
 import { useMemo } from "react";
 
-export default function HomePage() {
+export default function Page() {
   const { data: categoriesData, isLoading: isLoadingCategories } =
     useGetCategories();
   const { categories = [] } = categoriesData || {};

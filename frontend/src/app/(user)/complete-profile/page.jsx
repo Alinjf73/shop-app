@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast from "react-hot-toast";
 
-function CompleteProfile() {
+function Page() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
@@ -56,4 +56,4 @@ function CompleteProfile() {
   );
 }
 
-export default CompleteProfile;
+export default Page;

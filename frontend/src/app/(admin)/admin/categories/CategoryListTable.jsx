@@ -6,7 +6,7 @@ import { useQueryClient } from "@tanstack/react-query";
 import Link from "next/link";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { HiEye, HiTrash } from "react-icons/hi";
+import { HiTrash } from "react-icons/hi";
 import { RiEdit2Line } from "react-icons/ri";
 
 function CategoryListTable({ categories }) {
@@ -56,9 +56,6 @@ function CategoryListTable({ categories }) {
                 </td>
                 <td className="table__td font-bold text-lg">
                   <div className="flex items-center gap-x-4">
-                    <Link href={`/admin/categories/${category._id}`}>
-                      <HiEye className="text-primary-900 w-6 h-6" />
-                    </Link>
                     <button onClick={() => setOpenModalId(category._id)}>
                       <HiTrash className="text-rose-600 w-6 h-6" />
                     </button>

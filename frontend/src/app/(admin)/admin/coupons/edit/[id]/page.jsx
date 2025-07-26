@@ -8,7 +8,7 @@ import { useParams, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 import { toast } from "react-hot-toast";
 
-function page() {
+function Page() {
   const { id } = useParams();
   const { isLoading, data } = useGetOneCoupon(id);
   const { coupon } = data || {};
@@ -78,4 +78,4 @@ function page() {
     </div>
   );
 }
-export default page;
+export default Page;

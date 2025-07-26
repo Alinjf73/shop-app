@@ -16,7 +16,7 @@ const fieldLabels = {
   biography: "بیوگرافی",
 };
 
-function MePage() {
+function Page() {
   const { data, isLoading } = useGetUser();
   const queryClient = useQueryClient();
 
@@ -78,4 +78,4 @@ function MePage() {
   );
 }
 
-export default MePage;
+export default Page;

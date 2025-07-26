@@ -9,7 +9,7 @@ import LikeProduct from "./LikeProduct";
 
 export const dynamic = "force-dynamic";
 
-async function Products({ searchParams }) {
+async function Page({ searchParams }) {
   const cookieStore = cookies();
   const strCookies = toStringCookies(cookieStore);
 
@@ -44,4 +44,4 @@ async function Products({ searchParams }) {
   );
 }
 
-export default Products;
+export default Page;

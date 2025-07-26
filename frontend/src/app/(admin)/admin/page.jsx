@@ -7,7 +7,7 @@ import { useGetProducts } from "@/hooks/useProducts";
 import { useGetPayments } from "@/hooks/usePayments";
 import OrdersChart from "@/common/OrderChart";
 
-function DashboardLayout() {
+function Page() {
   const { data: usersData, isLoading: isLoadingUsers } = useGetAllUsers();
   const { data: productsData, isLoading: isLoadingProducts } = useGetProducts();
   const { data: paymentsData, isLoading: isLoadingPayments } = useGetPayments();
@@ -26,4 +26,4 @@ function DashboardLayout() {
   );
 }
 
-export default DashboardLayout;
+export default Page;

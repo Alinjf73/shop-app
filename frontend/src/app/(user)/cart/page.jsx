@@ -6,7 +6,7 @@ import CartItem from "./CartItem";
 import Loading from "@/common/Loading";
 import CartSummary from "./CartSummary";
 
-function CartPage() {
+function Page() {
   const { isLoading, data } = useGetUser();
   const { user, cart } = data || {};
 
@@ -47,4 +47,4 @@ function CartPage() {
   );
 }
 
-export default CartPage;
+export default Page;

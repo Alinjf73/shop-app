@@ -9,7 +9,7 @@ import Image from "next/image";
 export const dynamic = "force-static";
 export const dynamicParams = true;
 
-async function page({ params }) {
+async function Page({ params }) {
   const { slug } = params;
   const { product } = await getOneProdcutBySlug(slug);
 
@@ -55,7 +55,7 @@ async function page({ params }) {
   );
 }
 
-export default page;
+export default Page;
 
 export async function generateStaticParams() {
   const { products } = await getProducts();

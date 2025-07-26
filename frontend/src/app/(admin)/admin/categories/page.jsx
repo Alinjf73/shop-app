@@ -6,7 +6,7 @@ import { HiPlusCircle } from "react-icons/hi";
 import { useGetCategories } from "@/hooks/useCategories";
 import CategoryListTable from "./CategoryListTable";
 
-function page() {
+function Page() {
   const { data, isLoading } = useGetCategories();
   const { categories } = data || {};
 
@@ -27,4 +27,4 @@ function page() {
     </div>
   );
 }
-export default page;
+export default Page;

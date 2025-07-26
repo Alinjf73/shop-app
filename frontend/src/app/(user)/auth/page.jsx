@@ -8,7 +8,7 @@ import SendOTPFrom from "./SendOTPForm";
 import { checkOtp, getOtp } from "@/services/authService";
 const RESEND_TIME = 90;
 
-function AuthPage() {
+function Page() {
   const [phoneNumber, setPhoneNumber] = useState("");
   const [otp, setOtp] = useState("");
   const [step, setStep] = useState(1);
@@ -103,4 +103,4 @@ function AuthPage() {
     </div>
   );
 }
-export default AuthPage;
+export default Page;

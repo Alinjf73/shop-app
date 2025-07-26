@@ -20,7 +20,7 @@ const includesProductKey = [
   "imageLink",
 ];
 
-function page() {
+function Page() {
   const { id } = useParams();
   const { data, isLoading: isLoadingProduct } = useGetProductById(id);
   const { product } = data || {};
@@ -80,4 +80,4 @@ function page() {
     </div>
   );
 }
-export default page;
+export default Page;

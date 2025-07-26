@@ -8,7 +8,7 @@ import PaymentTable from "./payments/PaymentTable";
 import OrdersChart from "@/common/OrderChart";
 import Stats from "./(dashboard)/Stats";
 
-function Profile() {
+function Page() {
   const { data, isLoading } = useGetUser();
   const { user, payments } = data || {};
 
@@ -40,4 +40,4 @@ function Profile() {
     </div>
   );
 }
-export default Profile;
+export default Page;

@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 
-function addProductPage() {
+function Page() {
   const { isLoading, mutateAsync } = useAddProduct();
   const { data } = useGetCategories();
   const { categories } = data || {};
@@ -61,4 +61,4 @@ function addProductPage() {
     </div>
   );
 }
-export default addProductPage;
+export default Page;
