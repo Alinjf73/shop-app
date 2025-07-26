@@ -4,7 +4,7 @@ import Loading from "@/common/Loading";
 import { useGetUser } from "@/hooks/useAuth";
 import { toLocalDateString } from "@/utils/toLocalDate";
 import Link from "next/link";
-import PaymentTable from "./payments/paymentTable";
+import PaymentTable from "./payments/PaymentTable";
 import OrdersChart from "@/common/OrderChart";
 import Stats from "./(dashboard)/Stats";
 

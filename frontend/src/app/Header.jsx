@@ -28,7 +28,7 @@ function Header() {
   const menuOptions = [
     { id: 1, title: "خانه", href: "/", icon: <HiHome /> },
     { id: 2, title: "محصولات", href: "/products", icon: <AiFillProduct /> },
-    { id: 3, title: "پنل کاربر", href: "/profile/me", icon: <HiUser /> },
+    { id: 3, title: "پنل کاربر", href: "/profile", icon: <HiUser /> },
     ...(isAdmin
       ? [{ id: 4, title: "پنل ادمین", href: "/admin", icon: <RiAdminFill /> }]
       : []),

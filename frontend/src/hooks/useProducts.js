@@ -5,7 +5,7 @@ import {
   removeProduct,
   updateProduct,
 } from "@/services/productService";
-import { useMutation, useQuery } from "@tanstack/react-query";
+import { useMutation, useQueries, useQuery } from "@tanstack/react-query";
 
 export const useGetProducts = () =>
   useQuery({
@@ -34,3 +34,20 @@ export const useGetProductById = (id) =>
     retry: false,
     refetchOnWindowFocus: true,
   });
+
+export const useGetProductsByIds = (ids = []) => {
+  const queries = useQueries({
+    queries: ids.map((id) => ({
+      queryKey: ["get-product", id],
+      queryFn: () => getOneProdcutById(id),
+      enabled: Boolean(id),
+    })),
+  });
+
+  const isLoading = queries.some((q) => q.isLoading);
+  const isError = queries.some((q) => q.isError);
+
+  const products = queries.map((q) => q.data).filter(Boolean);
+
+  return { products, isLoading, isError };
+};

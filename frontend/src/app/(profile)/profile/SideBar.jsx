@@ -3,7 +3,7 @@
 import { logout } from "@/services/authService";
 import Link from "next/link";
 import { AiFillDashboard } from "react-icons/ai";
-import { HiHome, HiShoppingCart, HiUser } from "react-icons/hi";
+import { HiHeart, HiHome, HiShoppingCart, HiUser } from "react-icons/hi";
 import { usePathname } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { PiSignOutBold } from "react-icons/pi";
@@ -30,6 +30,12 @@ const menuOptions = [
     title: "سفارشات",
     href: "/profile/payments",
     icon: <HiShoppingCart />,
+  },
+  {
+    id: 5,
+    title: "مورد علاقه ها",
+    href: "/profile/favorites",
+    icon: <HiHeart />,
   },
 ];
 
